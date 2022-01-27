@@ -78,7 +78,6 @@
 
     <!-- Main Section -->
     <section class="section">
-      <!-- main content of the page -->
       <div class="columns">
         <!-- The sidebar -->
         <div class="column is-4-tablet is-3-desktop is-2-widescreen">
@@ -122,7 +121,52 @@
         </div>
 
         <!-- Main content -->
-        <div class="column">Content</div>
+        <div class="column">
+          <h1 class="title">Books</h1>
+
+          <nav class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <p class="s ubtitle is-5">
+                  <strong>6</strong>
+                  <span>books</span>
+                </p>
+              </div>
+
+              <p class="level-item">
+                <a href="new-book.html" class="button is-success">New</a>
+              </p>
+
+              <div class="level-item is-hidden-tablet-only">
+                <div class="field has-addons">
+                  <p class="control">
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Book name, ISBN,..."
+                    />
+                  </p>
+                  <p class="control">
+                    <button class="button">Search</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="level-right">
+              <div class="level-item">Order by</div>
+              <div class="level-item">
+                <div class="select">
+                  <select name="order-by" id="order-by">
+                    <option>Publish date</option>
+                    <option>Price</option>
+                    <option>Page count</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </section>
   </body>
